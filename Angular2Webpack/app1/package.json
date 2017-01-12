@@ -1,19 +1,16 @@
 {
   "name": "app1",
-  "version": "0.0.1",
-  "description": "Estudos Webpack",
-  "main": "index.js",
+  "version": "1.0.0",
   "scripts": {
     "tsc": "tsc",
     "tsc:w": "tsc -w",
     "lite": "lite-server",
-    "start": "concurrent \"npm run tsc:w\" \"npm run lite\" ",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "concurrent \"npm run tsc:w\" \"npm run lite\" "
   },
-  "author": "Eduardo Alexandre",
   "license": "ISC",
-  "dependencies":{
-  "angular2": "2.0.0-beta.0",
+  "author": "Eduardo Alexandre",
+  "dependencies": {
+    "angular2": "2.0.0-beta.0",
     "systemjs": "0.19.6",
     "es6-promise": "3.0.2",
     "es6-shim": "0.33.3",

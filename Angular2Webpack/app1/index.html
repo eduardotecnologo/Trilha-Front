@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Angular2 Webpack</title>
+    <!--Loads application libraries-->
+    <script src="node_modules/angular2/bundles/angular2-polyfills.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+    <script src="node_modules/rxjs/bundles/Rx.js"></script>
+    <script src="node_modules/angular2/bundles/angular2.dev.js"></script>
+    <!--Configuring SystemJS, responsible for loading js asynchronous files-->
+    <script>
+      System.config({
+          packages: {
+            app: {
+              format: 'register',
+              defaultExtension: 'js'
+            }
+          }
+      });
+      System.import('app/boot').then(null, console.error.bind(console));
+      </script>
+  </head>
+  <!--Displays the application-->
+  <body>
+    <meu-app>Carregando Manolo...</meu-app>
+  </body>
+</html>
