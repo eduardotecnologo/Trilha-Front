@@ -1,4 +1,5 @@
 import {Component} from 'angular2/core';
+import {Cliente} from './cliente';
 
 @Component({
   selector: 'meu-app',
@@ -15,16 +16,10 @@ import {Component} from 'angular2/core';
 })
 export class AppComponent{
   private textListagem: string = 'Listagem de Clientes';
-  private clientes: Object [] = [
-    {'id':'1',
-    'nome':'Eduardo'
-  },
-    {'id':'2',
-    'nome':'Alexandre'
-  },
-  {'id':'3',
-   'nome':'Lucio'
- }
+  private clientes: Cliente [] = [
+    new Cliente(1, 'Eduardo'),
+    new Cliente(2, 'Alexandre'),
+    new Cliente(3, 'Silva')
   ];
-  private cliente: Object = this.clientes[0];
+  private cliente: Cliente = this.clientes[0];
 }
