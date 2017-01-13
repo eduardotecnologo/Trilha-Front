@@ -21,18 +21,22 @@ System.register(['angular2/core', './cliente'], function(exports_1) {
         execute: function() {
             AppComponent = (function () {
                 function AppComponent() {
-                    this.textListagem = 'Listagem de Clientes';
+                    this.textListagem = 'Listagem de clientes';
                     this.clientes = [
                         new cliente_1.Cliente(1, 'Eduardo'),
-                        new cliente_1.Cliente(2, 'Alexandre'),
-                        new cliente_1.Cliente(3, 'Silva')
+                        new cliente_1.Cliente(2, 'Alexandre')
                     ];
                     this.cliente = this.clientes[0];
                 }
+                AppComponent.prototype.selecionar = function (index) {
+                    if (index < this.clientes.length) {
+                        this.cliente = this.clientes[index];
+                    }
+                };
                 AppComponent = __decorate([
                     core_1.Component({
                         selector: 'meu-app',
-                        template: "\n    <h1>Cadastro de Clientes com Angular2</h1>\n    <h2>{{textListagem}}</h2>\n    <p>Clientes selecionado: {{cliente.nome}}</p>\n    <ul>\n      <li *ngFor=\"#cli of clientes\">\n          {{cli.id}} - {{cli.nome}}\n      </li>\n    </ul>\n    "
+                        template: "\n    <h1>Cadastro de Clientes com Angular2</h1>\n    <h2>{{textListagem}}</h2>\n    <p>Clientes selecionado: {{cliente.nome}}</p>\n    <ul>\n      <li *ngFor=\"#cli of clientes, #i = index\">\n          <button (click)=\"selecionar(i)\">\n              {{cli.id}} - {{cli.nome}}\n              </button>\n      </li>\n    </ul>\n    "
                     }), 
                     __metadata('design:paramtypes', [])
                 ], AppComponent);
