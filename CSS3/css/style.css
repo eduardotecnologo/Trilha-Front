@@ -4,16 +4,90 @@ body{
 header{
     background-color: #a94442;
     width: 100%;
-    height: 100%;
+    height: 100px;
     margin: 0;
     color: white;
     -webkit-animation-name: animHeader;
     -webkit-animation-duration: 90s;
     animation-name: animHeader;
     animation-duration: 90s;
-    box-shadow: 0 4px rgba(0, 0, 0, 0.2), 0 6px 20px 0 coral;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 coral;
 }
 .title{
     padding: 10px;
     text-align: center;
+    font-size: 42px;
+    color: #985f0d;
+    -webkit-animation-name: animWelcome;
+    -webkit-animation-duration: 40s;
+    animation-name: animWelcome;
+    animation-duration: 40s;
 }
+#test{
+    position: relative;
+    font-weight: bold;
+    padding: 10px;
+    float: left;
+}
+@-webkit-keyframes animHeader {
+    0%  {background-color: #a94442;}
+    15% {background-color: darkslateblue;}
+    30% {background-color: gold;}
+    45% {background-color: #122b40;}
+    60% {background-color: #4cae4c;}
+    75% {background-color: darkcyan;}
+    100%{background-color: rgb(107, 167, 163);}
+}
+/*Standard syntax*/
+@keyframes animHeader  {
+    0%  {background-color: #d9534f;}
+    15% {background-color: darkslateblue;}
+    30% {background-color: gold;}
+    45% {background-color: #122b40;}
+    60% {background-color: #4cae4c;}
+    75% {background-color: darkcyan;}
+    100%{background-color: rgb(107, 167, 163);}
+}
+@-webkit-keyframes animWelcome {
+    0%  {opacity: 0;}
+    90% {opacity: 0.6;}
+    100%{opacity: 1.0;}
+}
+@keyframes animWelcome {
+    0%  {opacity: 0;}
+    90% {opacity: 0.6;}
+    100%{opacity: 1.0;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
