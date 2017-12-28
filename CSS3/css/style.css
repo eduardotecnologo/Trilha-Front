@@ -29,6 +29,10 @@ header{
     padding: 10px;
     float: left;
 }
+.section-example{
+    text-align: center;
+    padding-left: 20px;
+}
 @-webkit-keyframes animHeader {
     0%  {background-color: #a94442;}
     15% {background-color: darkslateblue;}

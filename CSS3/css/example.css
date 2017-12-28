@@ -1,0 +1,25 @@
+#corners1{
+    border-radius: 0px 25px 50px 10px;
+    background: #d9534f;
+    padding: 20px;
+    width: 200px;
+    height: 80px;
+    display: inline-block;
+}
+#corners2{
+    border-radius: 25px;
+    border: 2px solid #d9534f;
+    padding: 20px;
+    width: 200px;
+    height: 80px;
+    display: inline-block;
+}
+#corners3{
+    border-radius: 25px;
+    background: url("../img/react.png");
+    background-position: bottom;
+    padding: 20px;
+    width: 200px;
+    height: 80px;
+    display: inline-block;
+}
